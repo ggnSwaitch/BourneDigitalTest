@@ -22,6 +22,7 @@
 		029CB5C92653E1190007B2D8 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CB5C82653E1190007B2D8 /* MoviesModel.swift */; };
 		029CB5D12653E1660007B2D8 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CB5D02653E1660007B2D8 /* MoviesTableViewCell.swift */; };
 		029CB5D62653E1E70007B2D8 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 029CB5D52653E1E70007B2D8 /* movies.json */; };
+		029CB5E12653ED0D0007B2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029CB5E02653ED0D0007B2D8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		029CB5C82653E1190007B2D8 /* MoviesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		029CB5D02653E1660007B2D8 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		029CB5D52653E1E70007B2D8 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		029CB5E02653ED0D0007B2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				029CB57A2653DFB20007B2D8 /* SceneDelegate.swift */,
 				029CB57E2653DFB20007B2D8 /* Main.storyboard */,
 				029CB5812653DFB50007B2D8 /* Assets.xcassets */,
+				029CB5E02653ED0D0007B2D8 /* Assets.xcassets */,
 				029CB5832653DFB50007B2D8 /* LaunchScreen.storyboard */,
 				029CB5862653DFB50007B2D8 /* Info.plist */,
 			);
@@ -288,6 +291,7 @@
 				029CB5822653DFB50007B2D8 /* Assets.xcassets in Resources */,
 				029CB5D62653E1E70007B2D8 /* movies.json in Resources */,
 				029CB5802653DFB20007B2D8 /* Main.storyboard in Resources */,
+				029CB5E12653ED0D0007B2D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
