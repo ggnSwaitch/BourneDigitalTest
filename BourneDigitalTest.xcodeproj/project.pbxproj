@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		029CB5C92653E1190007B2D8 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CB5C82653E1190007B2D8 /* MoviesModel.swift */; };
 		029CB5D12653E1660007B2D8 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029CB5D02653E1660007B2D8 /* MoviesTableViewCell.swift */; };
 		029CB5D62653E1E70007B2D8 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 029CB5D52653E1E70007B2D8 /* movies.json */; };
+		1FA0D1DB5FA295A6CA8E6452 /* Pods_BourneDigitalTest_BourneDigitalTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009CC256A84737725D3CC8A1 /* Pods_BourneDigitalTest_BourneDigitalTestUITests.framework */; };
+		93984E7E1614241B6D3FC0C6 /* Pods_BourneDigitalTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B831FAD2D7D7B476D5C61F93 /* Pods_BourneDigitalTestTests.framework */; };
+		B34AD0C7088B4E13F18071D8 /* Pods_BourneDigitalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3C0A4D868D9EEBA1F058EE /* Pods_BourneDigitalTest.framework */; };
 		CE6866E72656845400094D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6866E62656845400094D63 /* Assets.xcassets */; };
 		CE6866F7265685AC00094D63 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6866F6265685AC00094D63 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		009CC256A84737725D3CC8A1 /* Pods_BourneDigitalTest_BourneDigitalTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BourneDigitalTest_BourneDigitalTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		029CB5752653DFB20007B2D8 /* BourneDigitalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BourneDigitalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029CB5782653DFB20007B2D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		029CB57A2653DFB20007B2D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +65,16 @@
 		029CB5C82653E1190007B2D8 /* MoviesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		029CB5D02653E1660007B2D8 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		029CB5D52653E1E70007B2D8 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		18D306F39BFD17BE7508ED66 /* Pods-BourneDigitalTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BourneDigitalTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BourneDigitalTestTests/Pods-BourneDigitalTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3552AC309E4BA704F3B20561 /* Pods-BourneDigitalTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BourneDigitalTestTests.release.xcconfig"; path = "Target Support Files/Pods-BourneDigitalTestTests/Pods-BourneDigitalTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B3C0A4D868D9EEBA1F058EE /* Pods_BourneDigitalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BourneDigitalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF290D76F5A642A7F5D4A90 /* Pods-BourneDigitalTest-BourneDigitalTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BourneDigitalTest-BourneDigitalTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-BourneDigitalTest-BourneDigitalTestUITests/Pods-BourneDigitalTest-BourneDigitalTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B98EEABF2393D17FFC7410 /* Pods-BourneDigitalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BourneDigitalTest.debug.xcconfig"; path = "Target Support Files/Pods-BourneDigitalTest/Pods-BourneDigitalTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B831FAD2D7D7B476D5C61F93 /* Pods_BourneDigitalTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BourneDigitalTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64B296BA0DA9C8F473590BE /* Pods-BourneDigitalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BourneDigitalTest.release.xcconfig"; path = "Target Support Files/Pods-BourneDigitalTest/Pods-BourneDigitalTest.release.xcconfig"; sourceTree = "<group>"; };
 		CE6866E62656845400094D63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		CE6866F6265685AC00094D63 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FD4F630C6B564CB41D36D48A /* Pods-BourneDigitalTest-BourneDigitalTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BourneDigitalTest-BourneDigitalTestUITests.release.xcconfig"; path = "Target Support Files/Pods-BourneDigitalTest-BourneDigitalTestUITests/Pods-BourneDigitalTest-BourneDigitalTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34AD0C7088B4E13F18071D8 /* Pods_BourneDigitalTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93984E7E1614241B6D3FC0C6 /* Pods_BourneDigitalTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA0D1DB5FA295A6CA8E6452 /* Pods_BourneDigitalTest_BourneDigitalTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,8 @@
 				029CB58E2653DFB50007B2D8 /* BourneDigitalTestTests */,
 				029CB5992653DFB50007B2D8 /* BourneDigitalTestUITests */,
 				029CB5762653DFB20007B2D8 /* Products */,
+				5C9135A126A60CEE2038BEA0 /* Pods */,
+				613DC26A464B1B0E7B7195EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +198,29 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
+		5C9135A126A60CEE2038BEA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0B98EEABF2393D17FFC7410 /* Pods-BourneDigitalTest.debug.xcconfig */,
+				C64B296BA0DA9C8F473590BE /* Pods-BourneDigitalTest.release.xcconfig */,
+				9CF290D76F5A642A7F5D4A90 /* Pods-BourneDigitalTest-BourneDigitalTestUITests.debug.xcconfig */,
+				FD4F630C6B564CB41D36D48A /* Pods-BourneDigitalTest-BourneDigitalTestUITests.release.xcconfig */,
+				18D306F39BFD17BE7508ED66 /* Pods-BourneDigitalTestTests.debug.xcconfig */,
+				3552AC309E4BA704F3B20561 /* Pods-BourneDigitalTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		613DC26A464B1B0E7B7195EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B3C0A4D868D9EEBA1F058EE /* Pods_BourneDigitalTest.framework */,
+				009CC256A84737725D3CC8A1 /* Pods_BourneDigitalTest_BourneDigitalTestUITests.framework */,
+				B831FAD2D7D7B476D5C61F93 /* Pods_BourneDigitalTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 029CB59F2653DFB50007B2D8 /* Build configuration list for PBXNativeTarget "BourneDigitalTest" */;
 			buildPhases = (
+				A8C645FC3B9137CD469F3896 /* [CP] Check Pods Manifest.lock */,
 				029CB5712653DFB20007B2D8 /* Sources */,
 				029CB5722653DFB20007B2D8 /* Frameworks */,
 				029CB5732653DFB20007B2D8 /* Resources */,
+				748BF88A7A7A1675C8958B0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 029CB5A22653DFB50007B2D8 /* Build configuration list for PBXNativeTarget "BourneDigitalTestTests" */;
 			buildPhases = (
+				FABFFF063CFBC783B00303A2 /* [CP] Check Pods Manifest.lock */,
 				029CB5872653DFB50007B2D8 /* Sources */,
 				029CB5882653DFB50007B2D8 /* Frameworks */,
 				029CB5892653DFB50007B2D8 /* Resources */,
@@ -223,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 029CB5A52653DFB50007B2D8 /* Build configuration list for PBXNativeTarget "BourneDigitalTestUITests" */;
 			buildPhases = (
+				E482063CF329D632E040AE44 /* [CP] Check Pods Manifest.lock */,
 				029CB5922653DFB50007B2D8 /* Sources */,
 				029CB5932653DFB50007B2D8 /* Frameworks */,
 				029CB5942653DFB50007B2D8 /* Resources */,
+				860440F9DCC07314B7622E21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +351,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		748BF88A7A7A1675C8958B0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BourneDigitalTest/Pods-BourneDigitalTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BourneDigitalTest/Pods-BourneDigitalTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BourneDigitalTest/Pods-BourneDigitalTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		860440F9DCC07314B7622E21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BourneDigitalTest-BourneDigitalTestUITests/Pods-BourneDigitalTest-BourneDigitalTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BourneDigitalTest-BourneDigitalTestUITests/Pods-BourneDigitalTest-BourneDigitalTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BourneDigitalTest-BourneDigitalTestUITests/Pods-BourneDigitalTest-BourneDigitalTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C645FC3B9137CD469F3896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BourneDigitalTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E482063CF329D632E040AE44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BourneDigitalTest-BourneDigitalTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FABFFF063CFBC783B00303A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BourneDigitalTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		029CB5712653DFB20007B2D8 /* Sources */ = {
@@ -493,6 +641,7 @@
 		};
 		029CB5A02653DFB50007B2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B98EEABF2393D17FFC7410 /* Pods-BourneDigitalTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -512,6 +661,7 @@
 		};
 		029CB5A12653DFB50007B2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64B296BA0DA9C8F473590BE /* Pods-BourneDigitalTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +681,7 @@
 		};
 		029CB5A32653DFB50007B2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D306F39BFD17BE7508ED66 /* Pods-BourneDigitalTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +704,7 @@
 		};
 		029CB5A42653DFB50007B2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3552AC309E4BA704F3B20561 /* Pods-BourneDigitalTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +727,7 @@
 		};
 		029CB5A62653DFB50007B2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF290D76F5A642A7F5D4A90 /* Pods-BourneDigitalTest-BourneDigitalTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +748,7 @@
 		};
 		029CB5A72653DFB50007B2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4F630C6B564CB41D36D48A /* Pods-BourneDigitalTest-BourneDigitalTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

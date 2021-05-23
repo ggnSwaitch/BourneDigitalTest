@@ -1,0 +1,6 @@
+framework module Pods_BourneDigitalTest_BourneDigitalTestUITests {
+  umbrella header "Pods-BourneDigitalTest-BourneDigitalTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
