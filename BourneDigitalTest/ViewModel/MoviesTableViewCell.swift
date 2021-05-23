@@ -17,6 +17,8 @@ class MoviesTableViewCell: UITableViewCell {
     var movie : MoviesData? {
         didSet {
             movieNameLabel.text = movie?.title
+            guard (movie?.imageHref != nil) else { return }
+            movieImageView!.downloaded(from: movie?.imageHref! ?? "") // assiging default value as empty string if JSON contains nil for image URL
         
         }
     }
@@ -25,14 +27,6 @@ class MoviesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-        
    
 }
 

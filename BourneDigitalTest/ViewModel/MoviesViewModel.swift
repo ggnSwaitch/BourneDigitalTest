@@ -7,13 +7,19 @@
 
 import Foundation
 
-class MoviesViewModel : NSObject{
+protocol ViewModelPressible {
+    var cellPressed: (()->Void)? { get set }
+}
+
+class MoviesViewModel : NSObject, ViewModelPressible{
+    var cellPressed: (() -> Void)?
+    
     
     private var apiServie : APIService!
     
     private(set) var moviesData : Movies! {
         didSet{
-            self.bindMoviesViewModelToController()
+            self.bindMoviesViewModelToController()  // biinding the viewmodel to the View controller
         }
     }
     
@@ -30,8 +36,9 @@ class MoviesViewModel : NSObject{
         self.apiServie.getMoviesData { (moviesData) in
             self.moviesData = moviesData
             
-            print (moviesData)
         }
     }
+    
+    
     
 }

@@ -14,10 +14,14 @@ class MoviesTableViewDataSource<CELL : UITableViewCell,T> : NSObject, UITableVie
     private var items : [T]!
     var configureCell : (CELL, T) -> () = {_,_ in }
     
-    init(cellIdentifier : String, items : [T], configureCell : @escaping (CELL, T) -> ()) {
+    var moviesViewModel : MoviesViewModel
+    
+    init(cellIdentifier : String, items : [T], moviesViewModel: MoviesViewModel ,configureCell : @escaping (CELL, T) -> ()) {
         self.cellIdentifier = cellIdentifier
         self.items =  items
         self.configureCell = configureCell
+        self.moviesViewModel = moviesViewModel
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
