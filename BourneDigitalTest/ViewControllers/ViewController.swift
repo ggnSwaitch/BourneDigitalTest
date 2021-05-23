@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     private var moviesViewModel : MoviesViewModel!
+    var refreshControl = UIRefreshControl()
     
     @IBOutlet weak var moviesTableView: UITableView! //Movies table view
     
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(addTapped))
         UpdateUI() 
         
     }
@@ -26,6 +28,10 @@ class ViewController: UIViewController {
         self.updateDataSource()
     }
     
+    
+    @objc func addTapped(){
+        self.UpdateUI()
+    }
     
     func updateDataSource(){
         self.dataSourceAndDelegate = MoviesTableViewDataSource(cellIdentifier: "MoviesTableViewCell", items: self.moviesViewModel.moviesData.movies, moviesViewModel: self.moviesViewModel, configureCell: { (cell, evm) in
