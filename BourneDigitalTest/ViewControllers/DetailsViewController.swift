@@ -38,7 +38,14 @@ class DetailsViewController: UIViewController {
         self.movieRating?.rating = movieDetails.rating ?? 0
         // Change the text
         self.movieRating?.text = String(movieDetails.rating ?? 0)
-        self.imageView.downloaded(from: (movieDetails.imageHref ?? ""))
+        if(movieDetails.imageHref == nil)
+        {
+            self.imageView.image = UIImage(named: "placeholderImage") ?? nil
+        }
+        else{
+            self.imageView.downloaded(from: (movieDetails.imageHref ?? ""))
+        }
+        
         // Do any additional setup after loading the view.
     }
 

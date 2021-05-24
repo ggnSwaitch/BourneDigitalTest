@@ -17,8 +17,14 @@ class MoviesTableViewCell: UITableViewCell {
     var movie : MoviesData? {
         didSet {
             movieNameLabel.text = movie?.title
-            guard (movie?.imageHref != nil) else { return }
-            movieImageView!.downloaded(from: movie?.imageHref! ?? "") // assiging default value as empty string if JSON contains nil for image URL
+            if(movie?.imageHref != nil)
+            {
+                movieImageView!.downloaded(from: movie?.imageHref ?? "") // assiging default value as empty string if JSON contains nil for image URL
+            }
+            else{
+                movieImageView!.image = UIImage(named: "placeholderImage") ?? nil
+            }
+           
         
         }
     }
