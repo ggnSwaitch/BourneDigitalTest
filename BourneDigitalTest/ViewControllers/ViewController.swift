@@ -18,8 +18,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(addTapped))
+        self.callToViewModelForUIUpdate()
         UpdateUI() 
         
+    }
+    
+    func callToViewModelForUIUpdate(){
+           
+        self.moviesViewModel =  MoviesViewModel()
+           self.moviesViewModel.bindMoviesViewModelToController = {
+               self.updateDataSource()
+           }
+       
     }
     
     
@@ -34,14 +44,18 @@ class ViewController: UIViewController {
     }
     
     func updateDataSource(){
+        guard self.moviesViewModel.moviesData != nil else {
+            return
+        }
         self.dataSourceAndDelegate = MoviesTableViewDataSource(cellIdentifier: "MoviesTableViewCell", items: self.moviesViewModel.moviesData.movies, moviesViewModel: self.moviesViewModel, configureCell: { (cell, evm) in
             cell.movie = evm
             
         })
-        
-        self.moviesTableView.dataSource = self.dataSourceAndDelegate
-        self.moviesTableView.delegate = self
-        self.moviesTableView.reloadData()   // reload table
+        DispatchQueue.main.async {
+                   self.moviesTableView.dataSource = self.dataSourceAndDelegate
+                    self.moviesTableView.delegate = self
+                   self.moviesTableView.reloadData()
+               }
     }
       
 }

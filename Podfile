@@ -7,6 +7,7 @@ target 'BourneDigitalTest' do
 
   # Pods for BourneDigitalTest
       pod 'Cosmos', '~> 23.0'
+      pod 'Alamofire'
 
 
   target 'BourneDigitalTestTests' do

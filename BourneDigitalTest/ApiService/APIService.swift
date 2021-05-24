@@ -6,21 +6,28 @@
 //
 
 import Foundation
+import Alamofire
 
 class APIService: NSObject {
     
     func getMoviesData(completion : @escaping (Movies) -> ()){
-        if let url = URL(string: "https://www.dropbox.com/s/q1ins5dsldsojzt/movies.json?dl=1") {
+        
+        AF.request("https://www.dropbox.com/s/q1ins5dsldsojzt/movies.json?dl=1").responseData { response in
+            switch response.result {
+            case .failure(let error):
+                print(error)
+            case .success(let data):
                 do {
-                    let data = try Data(contentsOf: url)
-                    let decoder = JSONDecoder()
-                    let jsonData = try decoder.decode(Movies.self, from: data)
-                    completion(jsonData)
-                } catch {
-                    print("error:\(error)")
+                    let pageData = try JSONDecoder().decode(Movies.self, from: data)
+                    completion(pageData)
+                } catch let error {
+                    print(error)
                 }
             }
-
+        }
     }
     
 }
+
+
+//REf:https://www.raywenderlich.com/6587213-alamofire-5-tutorial-for-ios-getting-started
