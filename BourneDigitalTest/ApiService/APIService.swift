@@ -10,7 +10,7 @@ import Foundation
 class APIService: NSObject {
     
     func getMoviesData(completion : @escaping (Movies) -> ()){
-        if let url = Bundle.main.url(forResource: "movies", withExtension: "json") {
+        if let url = URL(string: "https://www.dropbox.com/s/q1ins5dsldsojzt/movies.json?dl=1") {
                 do {
                     let data = try Data(contentsOf: url)
                     let decoder = JSONDecoder()
